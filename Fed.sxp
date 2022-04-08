@@ -1,0 +1,102 @@
+<VERSION>StrokeIt .9.2a</VERSION>
+
+<APP name="Fed">
+class=FedEditorClass
+Action Compile [C] {
+   gesture = C
+   F9 = keys, keys [F9]
+}
+Action Quit [Q] {
+   gesture = Q
+   Ctrl-Q = keys, keys [Ctrl_down]Q[Ctrl_up]
+}
+Action Refresh [R] {
+   gesture = R
+   Numpad5 = keys, keys [Numpad5]
+}
+Action Reload [O reversed] {
+   gesture = O Reversed
+   Ctrl  Numpad5 = keys, keys [ctrl_down][Numpad5][ctrl_up]
+}
+Buffer Next [Right-Up] {
+   gesture = Right-Up
+   Numpad6 = keys, keys [Numpad6]
+}
+Buffer Prev [Left-Up] {
+   gesture = Left-Up
+   Numpad4 = msg, send  "" "" ""
+}
+Error Next [\ Down] {
+   gesture = \ Down
+   Numpad 2 = keys, keys [ctrl_down][Numpad2][ctrl_up]
+}
+Error Prev [/ up] {
+   gesture = / Up
+   Numpad 8 = keys, keys [ctrl_down][Numpad8][ctrl_up]
+}
+File New [N] {
+   gesture = N
+   Ctrl N = keys, keys [ctrl_down]N[ctrl_up]
+}
+File Open [0] {
+   gesture = O
+   Add = keys, keys [Add]
+}
+File Save [S] {
+   gesture = S
+   Ctrl S = keys, keys [Ctrl_down]S[Ctrl_up]
+}
+File Save As [A] {
+   gesture = A
+   Ctrl A = keys, keys [ctrl_down]A[ctrl_up]
+}
+Fold Close [Left] {
+   gesture = Left
+   Numpad3 = keys, keys [Numpad3]
+}
+Fold Create [Right-Left-Right] {
+   gesture = Right-Left-Right
+   Numpad0 = keys, keys [Numpad0]
+}
+Fold Enter [Right-Left] {
+   gesture = Right-Left
+   Numpad7 = keys, keys [Numpad7]
+}
+Fold Exit [Left-Right] {
+   gesture = Left-Right
+   Numpad9 = keys, keys [Numpad9]
+}
+Fold Open [Right] {
+   gesture = Right
+   Numpad1 = keys, keys [Numpad1]
+}
+Fold Remove [Left-Right-Left] {
+   gesture = Left-Right-Left
+   Ctrl-Numpad0 = keys, keys [Ctrl_down][Numpad0][Ctrl_up]
+}
+Line Delete [Down-Up] {
+   gesture = Down-Up
+   Numpad - = keys, keys [subtract]
+}
+Line Undelete [Up Down] {
+   gesture = Up-Down
+   Ctrl Numpad - = keys, keys [ctrl_down][subtract][ctrl_up]
+}
+Text Find [F] {
+   gesture = Left-Down
+   Ctrl F = keys, keys [ctrl_down]F[ctrl_up]
+}
+Text Find Next [Down] {
+   gesture = Down
+   F3 = keys, keys [F3]
+}
+Text Find Prev [Up] {
+   gesture = Up
+   Shift F2 = keys, keys [shift_down][F3][shift_up]
+}
+Text Replace [Reverse F] {
+   gesture = Right-Down
+   Ctrl H = keys, keys [ctrl_down]H[ctrl_up]
+}
+</APP>
+
